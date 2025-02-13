@@ -151,11 +151,11 @@ def main():
     chain = create_chain(faiss_db)
 
     print(f"Hi, I am {ASSISTANT_NAME}, How can I assist you today?")
-    print("Type 'exit' or 'quit' to end.\n")
+    print("Type 'bye' or 'see you' to end.\n")
 
     while True:
         user_input = input("You: ").strip()
-        if user_input.lower() in ["exit", "quit"]:
+        if user_input.lower() in ["bye", "see you"]:
             print(f"{ASSISTANT_NAME}: Goodbye!")
             break
         if not user_input:

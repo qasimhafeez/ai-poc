@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """
 hulk_ai.py
@@ -87,9 +86,6 @@ def build_vector_store(faq_data):
 
 # Custom Chain
 class CustomConversationalRetrievalChain(ConversationalRetrievalChain):
-    """
-    Ensures 'source_documents' always exists.
-    """
 
     def _call(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         # Use parent class processing
